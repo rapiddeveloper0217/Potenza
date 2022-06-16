@@ -367,6 +367,7 @@ a.btn_1.yellow:hover,
 
 .content-left-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -455,11 +456,11 @@ a.btn_1.yellow:hover,
 }
 
 a#logo {
-  position: absolute;
+  /* position: absolute;
   left: 20px;
   top: 15px;
   display: block;
-  height: 35px;
+  height: 35px; */
 }
 @media (max-width: 991px) {
   a#logo {
