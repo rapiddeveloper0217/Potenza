@@ -158,7 +158,7 @@
 										<span class="school_field"></span>
 										<br />
 										<label for="name" class="add_top_10">Worked day: </label><br />
-										<div class="selectDates" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 25px;">
+										<div class="selectDatesResult" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 25px;">
 										</div>
 										<br />
 										<label for="name" class="add_top_10">Started time: </label>
@@ -261,6 +261,11 @@
 					<span class="material-symbols-outlined hoverDelete">
 						delete
 					</span>
+				</p>
+			`)
+
+			$(".selectDatesResult").append(`
+				<p datenum=`+dateNum+` class="selectDateCard">`+$("#day").val()+' '+$("#startDate").val()+' ~ '+$("#endDate").val()+` 
 				</p>
 			`)
 			
