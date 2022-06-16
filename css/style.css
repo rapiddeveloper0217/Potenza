@@ -41,6 +41,44 @@ body {
   height: 100%;
 }
 
+.hoverDelete {
+  padding-left: 10px;
+  cursor: pointer;
+}
+.selectDateCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.addBtn {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  transition: background .5s ease;
+  -moz-transition: background .5s ease;
+  -webkit-transition: background .5s ease;
+  -o-transition: background .5s ease;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  background: #1dbe72;
+  position: relative;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 1;
+  padding: 12px 30px;
+}
+.addBtn:hover {
+  background: #d80075;
+  color: #fff;
+}
+
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
