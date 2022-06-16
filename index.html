@@ -85,8 +85,16 @@
 
 							<div class="step">
 	                            <h2 class="section_title">Step 2</h2>
-	                            <h3 class="main_question">Enter your schoolname</h3>
-	                            <div class="form-group add_top_30">
+	                            <h3 class="main_question">Enter your personal info</h3>
+								<div class="form-group add_top_30">
+	                                <label for="email">Email</label>
+	                                <input type="text" name="email" id="email" class="form-control required" onchange="getVals(this, 'email_field');">
+	                            </div>
+								<div class="form-group add_top_10">
+	                                <label for="contact">Contact number</label>
+	                                <input type="text" name="contact" id="contact" class="form-control required" onchange="getVals(this, 'contact_field');">
+	                            </div>
+	                            <div class="form-group add_top_10">
 	                                <label for="school">Schoolname</label>
 	                                <input type="text" name="school" id="school" class="form-control required" onchange="getVals(this, 'school_field');">
 	                            </div>
@@ -130,8 +138,14 @@
 										<label for="name">Fullname: </label>
 										<span class="name_field"></span>
 										<br />
-										<label for="name" class="add_top_10">School name: </label>
-										<span class="day_field"></span>
+										<label for="email" class="add_top_10">Email: </label>
+										<span class="email_field"></span>
+										<br />
+										<label for="contact" class="add_top_10">Contact number: </label>
+										<span class="contact_field"></span>
+										<br />
+										<label for="school" class="add_top_10">School name: </label>
+										<span class="school_field"></span>
 										<br />
 										<label for="name" class="add_top_10">Worked day: </label>
 										<span class="day_field"></span>

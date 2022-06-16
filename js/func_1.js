@@ -79,19 +79,26 @@ function getVals(formControl, controlType) {
         case 'name_field':
             // Get the value for input
             var value = $(formControl).val();
-            console.log(value);
             $(".name_field").text(value);
+            break;
+        case 'email_field':
+            // Get the value for input
+            var value = $(formControl).val();
+            $(".email_field").text(value);
+            break;
+        case 'contact_field':
+            // Get the value for input
+            var value = $(formControl).val();
+            $(".contact_field").text(value);
             break;
         case 'school_field':
             // Get the value for input
             var value = $(formControl).val();
-            console.log(value);
             $(".school_field").text(value);
             break;
         case 'day_field':
             // Get the value for input
             var value = $(formControl).val();
-            console.log(value);
             $(".day_field").text(value);
             break;
         case 'start_field':
