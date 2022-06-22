@@ -442,7 +442,7 @@
           postData.push(temp);
         }
         console.log(postData);
-		 $.post("/save.php", { data: postData }, function (result) {
+		 $.post("/backend/save.php", { data: postData }, function (result) {
           alert(result);
         });
       });
