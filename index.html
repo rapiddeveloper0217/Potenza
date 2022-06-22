@@ -442,9 +442,12 @@
           postData.push(temp);
         }
         console.log(postData);
-        $.post("https://backend-59h.pages.dev/index.php", { data: postData }, function (result) {
+		$.ajax('https://backend-59h.pages.dev/index.php',{
+		 type:'POST',
+		 {data: postData }, 
+		 function (result) {
           alert(result);
-        });
+        }});
       });
       $("#dateAdd").click(() => {
         if (!$("#day").val()) {
