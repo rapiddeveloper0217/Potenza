@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="NLS TimeSheet">
-    <meta name="author" content="Ansonika">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="NLS TimeSheet" />
+    <meta name="author" content="Ansonika" />
     <title>NLS TimeSheet</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <!-- GOOGLE WEB FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600"
+      rel="stylesheet"
+    />
 
     <!-- BASE CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/menu.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-	<link href="css/vendors.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/vendors.css" rel="stylesheet" />
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-	
-	<!-- MODERNIZR MENU -->
-	<script src="js/modernizr.js"></script>
+    <link href="css/custom.css" rel="stylesheet" />
 
-	<style>
-		.material-symbols-outlined {
-		  font-variation-settings:
-		  'FILL' 0,
-		  'wght' 400,
-		  'GRAD' 0,
-		  'opsz' 48
-		}
-	</style>
+    <!-- MODERNIZR MENU -->
+    <script src="js/modernizr.js"></script>
 
-</head>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+    </style>
+  </head>
 
-<body>
-	
-	<div id="preloader">
-		<div data-loader="circle-side"></div>
-	</div><!-- /Preload -->
-	
-	<div id="loader_form">
-		<div data-loader="circle-side-2"></div>
-	</div><!-- /loader_form -->
-	
-	
-	<div class="container-fluid">
-	    <div class="row row-height">
-	        <div class="col-xl-4 col-lg-4 content-left">
-	            <div class="content-left-wrapper">
-	                <a href="index.html" id="logo"><img src="img/logo2.png" width="100%" alt="" ></a>
-	                <!-- <div id="social">
+  <body>
+    <div id="preloader">
+      <div data-loader="circle-side"></div>
+    </div>
+    <!-- /Preload -->
+
+    <div id="loader_form">
+      <div data-loader="circle-side-2"></div>
+    </div>
+    <!-- /loader_form -->
+
+    <div class="container-fluid">
+      <div class="row row-height">
+        <div class="col-xl-4 col-lg-4 content-left">
+          <div class="content-left-wrapper">
+            <a href="index.html" id="logo"
+              ><img src="img/logo2.png" width="100%" alt=""
+            /></a>
+            <!-- <div id="social">
 	                    <ul>
 	                        <li><a href="#0"><i class="icon-facebook"></i></a></li>
 	                        <li><a href="#0"><i class="icon-twitter"></i></a></li>
@@ -63,223 +65,470 @@
 	                        <li><a href="#0"><i class="icon-linkedin"></i></a></li>
 	                    </ul>
 	                </div> -->
-	                <!-- /social -->
-	                <div class="copy">Powered by <a href="https://kpve.com/" style="color: white;" target="_blank">KPVE</a></div>
-	            </div>
-	            <!-- /content-left-wrapper -->
-	        </div>
-	        <!-- /content-left -->
-	        <div class="col-xl-8 col-lg-8 content-right" id="start">
-	            <div id="wizard_container">
-	                <div id="top-wizard">
-	                    <span id="location"></span>
-	                    <div id="progressbar"></div>
-	                </div>
-	                <!-- /top-wizard -->
-	                <form id="wrapped" action="/" method="post" enctype="multipart/form-data">
-	                    <input id="website" name="website" type="text" value="">
-	                    <!-- Leave for security protection, read docs for details -->
-	                    <div id="middle-wizard">
-	                        <div class="step">
-	                            <h2 class="section_title">Step 1</h2>
-	                            <h3 class="main_question">Enter your fullname</h3>
-	                            <div class="form-group add_top_30">
-	                                <label for="name">Fullname</label>
-	                                <input value="" type="text" name="name" id="name" class="form-control required" onchange="getVals(this, 'name_field');">
-	                            </div>
-	                        </div>
-	                        <!-- /step-->
+            <!-- /social -->
+            <div class="copy">
+              Powered by
+              <a href="https://kpve.com/" style="color: white" target="_blank"
+                >KPVE</a
+              >
+            </div>
+          </div>
+          <!-- /content-left-wrapper -->
+        </div>
+        <!-- /content-left -->
+        <div class="col-xl-8 col-lg-8 content-right" id="start">
+          <div id="wizard_container">
+            <div id="top-wizard">
+              <span id="location"></span>
+              <div id="progressbar"></div>
+            </div>
+            <!-- /top-wizard -->
+            <form
+              id="wrapped"
+              action="#"
+              method="post"
+              enctype="multipart/form-data"
+            >
+              <input id="website" name="website" type="text" value="" />
+              <!-- Leave for security protection, read docs for details -->
+              <div id="middle-wizard">
+                <div class="step">
+                  <h2 class="section_title">Step 1</h2>
+                  <h3 class="main_question">Enter your fullname</h3>
+                  <div class="form-group add_top_30">
+                    <label for="name">Fullname</label>
+                    <input
+                      value="James"
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="form-control required"
+                      onchange="getVals(this, 'name_field');"
+                    />
+                  </div>
+                </div>
+                <!-- /step-->
 
-							<div class="step">
-	                            <h2 class="section_title">Step 2</h2>
-	                            <h3 class="main_question">Enter your personal info</h3>
-								<div class="form-group add_top_30">
-	                                <label for="email">Email</label>
-	                                <input value="" type="text" name="email" id="email" class="form-control required" onchange="getVals(this, 'email_field');">
-	                            </div>
-								<div class="form-group add_top_10">
-	                                <label for="contact">Contact number</label>
-	                                <input value="" type="text" name="contact" id="contact" class="form-control required" onchange="getVals(this, 'contact_field');">
-	                            </div>
-	                            <div class="form-group add_top_10">
-	                                <label for="school">Schoolname</label>
-	                                <input value="" type="text" name="school" id="school" class="form-control required" onchange="getVals(this, 'school_field');">
-	                            </div>
-	                        </div>
+                <div class="step">
+                  <h2 class="section_title">Step 2</h2>
+                  <h3 class="main_question">Enter your personal info</h3>
+                  <div class="form-group add_top_30">
+                    <label for="email">Email</label>
+                    <input
+                      value="superdev0109@outlook.com"
+                      type="text"
+                      name="email"
+                      id="email"
+                      class="form-control required"
+                      onchange="getVals(this, 'email_field');"
+                    />
+                  </div>
+                  <div class="form-group add_top_10">
+                    <label for="contact">Contact number</label>
+                    <input
+                      value="5175705"
+                      type="text"
+                      name="contact"
+                      id="contact"
+                      class="form-control required"
+                      onchange="getVals(this, 'contact_field');"
+                    />
+                  </div>
+                  <div class="form-group add_top_10">
+                    <label for="school">Schoolname</label>
+                    <input
+                      value="school"
+                      type="text"
+                      name="school"
+                      id="school"
+                      class="form-control required"
+                      onchange="getVals(this, 'school_field');"
+                    />
+                  </div>
+                </div>
 
-							<div class="step">
-	                            <h2 class="section_title">Step 3</h2>
-	                            <h3 class="main_question">Enter times worked from calendar</h3>
-	                            <div class="form-group add_top_30">
-	                                <label for="day">Enter day</label>
-	                                <input type="date" name="day" id="day" class="form-control required" onchange="getVals(this, 'day_field');">
-	                                <label for="start" class="add_top_10">Start time</label>
-	                                <input type="time" name="start" id="startDate" class="form-control required" onchange="getVals(this, 'start_field');">
-	                                <label for="end" class="add_top_10">End time</label>
-	                                <input type="time" name="end" id="endDate" class="form-control required" onchange="getVals(this, 'end_field');">
-									<div style="width: 100%; height: 50px;">
-										<button type="button" id="dateAdd" class="addBtn add_top_10" style="float: right;">Add</button>
-									</div>
-									<div class="selectDates">
-									</div>
-	                            </div>
-								
-	                        </div>
+                <div class="step">
+                  <h2 class="section_title">Step 3</h2>
+                  <h3 class="main_question">
+                    Enter times worked from calendar
+                  </h3>
+                  <div
+                    class="form-group add_top_30"
+                    style="
+                      display: flex;
+                      flex-direction: row;
+                      gap: 20px;
+                      justify-content: center;
+                    "
+                  >
+                    <div>
+                      <label for="day">Enter day</label>
+                      <input
+                        type="date"
+                        name="day"
+                        id="day"
+                        class="form-control required"
+                        onchange="getVals(this, 'day_field');"
+                      />
+                    </div>
+                    <div>
+                      <label for="start">Start time</label>
+                      <input
+                        type="time"
+                        name="start"
+                        id="startDate"
+                        class="form-control required"
+                        onchange="getVals(this, 'start_field');"
+                      />
+                    </div>
+                    <div>
+                      <label for="end">End time</label>
+                      <input
+                        type="time"
+                        name="end"
+                        id="endDate"
+                        class="form-control required"
+                        onchange="getVals(this, 'end_field');"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group add_top_10">
+                    <div>
+                      <label for="description">Description</label>
+                      <input
+                        value=""
+                        type="text"
+                        name="description"
+                        id="description"
+                        class="form-control required"
+                        onchange="getVals(this, 'desc_field');"
+                      />
+                    </div>
+                    <div class="add_top_15">
+                      <label for="rate">Pay rate</label>
+                      <input
+                        value=""
+                        type="number"
+                        name="rate"
+                        id="rate"
+                        min="1"
+                        max="1000"
+                        class="form-control required"
+                        onchange="getVals(this, 'rate_field');"
+                      />
+                    </div>
+                  </div>
 
-							<div class="step">
-	                            <h2 class="section_title">Step 4</h2>
-	                            <h3 class="main_question">Confirm your worked time</h3>
-	                            <div class="form-group add_top_30 selectDates">
+                  <div style="width: 100%; height: 50px">
+                    <button
+                      type="button"
+                      id="dateAdd"
+                      class="addBtn add_top_10"
+                      style="float: right"
+                    >
+                      Add
+                    </button>
+                  </div>
+                  <div class="selectDates"></div>
+                </div>
 
-	                            </div>
-	                        </div>
+                <div class="step">
+                  <h2 class="section_title">Step 4</h2>
+                  <h3 class="main_question">Confirm your worked time</h3>
+                  <div class="form-group add_top_30 selectDates"></div>
+                </div>
 
-	                        <div class="submit step" id="end">
-	                            <div class="summary">
-	                                <div class="wrapper" style="padding: 0 30px;">
-	                                    <h3>Thanks <span class="name_field"></span></h3>
-	                                    <p>Before you submit, please confirm this info.</p>
-	                                </div>
-									<div class="form-group add_top_30">
-										<label for="name">Fullname: </label>
-										<span class="name_field"></span>
-										<br />
-										<label for="email" class="add_top_10">Email: </label>
-										<span class="email_field"></span>
-										<br />
-										<label for="contact" class="add_top_10">Contact number: </label>
-										<span class="contact_field"></span>
-										<br />
-										<label for="school" class="add_top_10">School name: </label>
-										<span class="school_field"></span>
-										<br />
-										<label for="name" class="add_top_10">Worked day: </label><br />
-										<div class="selectDatesResult" style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 25px;">
-										</div>
-										<br />
-										<label for="name" class="add_top_10">Started time: </label>
-										<span class="start_field"></span>
-										<br />
-										<label for="name" class="add_top_10">Ended time: </label>
-										<span class="end_field"></span>
-									</div>
-	                                <div class="text-center">
-	                                    <div class="form-group terms">
-	                                        <label class="container_check">Please accept our <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">Terms and conditions</a> before Submit
-	                                            <input type="checkbox" name="terms" value="Yes" class="required">
-	                                            <span class="checkmark"></span>
-	                                        </label>
-	                                    </div>
-	                                </div>
-	                            </div>
-	                        </div>
-	                        <!-- /step last-->
+                <div class="submit step" id="end">
+                  <div class="summary">
+                    <div class="wrapper" style="padding: 0 30px">
+                      <h3>Thanks <span class="name_field">James</span></h3>
+                      <p>Before you submit, please confirm this info.</p>
+                    </div>
+                    <div class="form-group add_top_30">
+                      <label for="name">Fullname: </label>
+                      <span class="name_field">James</span>
+                      <br />
+                      <label for="email" class="add_top_10">Email: </label>
+                      <span class="email_field">superdev0109@outlook.com</span>
+                      <br />
+                      <label for="contact" class="add_top_10"
+                        >Contact number:
+                      </label>
+                      <span class="contact_field">5175705</span>
+                      <br />
+                      <label for="school" class="add_top_10"
+                        >School name:
+                      </label>
+                      <span class="school_field">School</span>
+                      <br />
+                      <label for="name" class="add_top_10">Worked day: </label
+                      ><br />
+                      <div
+                        class="selectDatesResult"
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                          align-items: center;
+                          margin-top: 25px;
+                        "
+                      ></div>
+                      <br />
+                      <label for="name" class="add_top_10"
+                        >Started time:
+                      </label>
+                      <span class="start_field"></span>
+                      <br />
+                      <label for="name" class="add_top_10">Ended time: </label>
+                      <span class="end_field"></span>
+                    </div>
+                    <div class="text-center">
+                      <div class="form-group terms">
+                        <label class="container_check"
+                          >Please accept our
+                          <a
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#terms-txt"
+                            >Terms and conditions</a
+                          >
+                          before Submit
+                          <input
+                            type="checkbox"
+                            name="terms"
+                            value="Yes"
+                            class="required"
+                          />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /step last-->
+              </div>
+              <!-- /middle-wizard -->
+              <div id="bottom-wizard">
+                <button type="button" name="backward" class="backward">
+                  Prev
+                </button>
+                <button type="button" name="forward" class="forward">
+                  Next
+                </button>
+                <button type="submit" name="process" id="submit" class="submit">
+                  Submit
+                </button>
+              </div>
+              <!-- /bottom-wizard -->
+            </form>
+          </div>
+          <!-- /Wizard container -->
+        </div>
+        <!-- /content-right-->
+      </div>
+      <!-- /row-->
+    </div>
+    <!-- /container-fluid -->
 
-	                    </div>
-	                    <!-- /middle-wizard -->
-	                    <div id="bottom-wizard">
-	                        <button type="button" name="backward" class="backward">Prev</button>
-	                        <button type="button" name="forward" class="forward">Next</button>
-	                        <button type="submit" name="process" class="submit">Submit</button>
-	                    </div>
-	                    <!-- /bottom-wizard -->
-	                </form>
-	            </div>
-	            <!-- /Wizard container -->
-	        </div>
-	        <!-- /content-right-->
-	    </div>
-	    <!-- /row-->
-	</div>
-	<!-- /container-fluid -->
+    <div class="cd-overlay-nav">
+      <span></span>
+    </div>
+    <!-- /cd-overlay-nav -->
 
-	<div class="cd-overlay-nav">
-		<span></span>
-	</div>
-	<!-- /cd-overlay-nav -->
+    <div class="cd-overlay-content">
+      <span></span>
+    </div>
+    <!-- /cd-overlay-content -->
+    <!-- /menu button -->
 
-	<div class="cd-overlay-content">
-		<span></span>
-	</div>
-	<!-- /cd-overlay-content -->
-	<!-- /menu button -->
-	
-	<!-- Modal terms -->
-	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt sensibus.</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
-				</div>
-			</div>
-			<!-- /.modal-content -->
-		</div>
-		<!-- /.modal-dialog -->
-	</div>
-	<!-- /.modal -->
-	
-	<!-- COMMON SCRIPTS -->
-	<script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Modal terms -->
+    <div
+      class="modal fade"
+      id="terms-txt"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="termsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet, in porro albucius qui, in
+              <strong>nec quod novum accumsan</strong>, mei ludus tamquam
+              dolores id. No sit debitis meliore postulant, per ex prompta
+              alterum sanctus, pro ne quod dicunt sensibus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod
+              novum accumsan, mei ludus tamquam dolores id. No sit debitis
+              meliore postulant, per ex prompta alterum sanctus, pro ne quod
+              dicunt sensibus. Lorem ipsum dolor sit amet,
+              <strong>in porro albucius qui</strong>, in nec quod novum
+              accumsan, mei ludus tamquam dolores id. No sit debitis meliore
+              postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+              sensibus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod
+              novum accumsan, mei ludus tamquam dolores id. No sit debitis
+              meliore postulant, per ex prompta alterum sanctus, pro ne quod
+              dicunt sensibus.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn_1" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- COMMON SCRIPTS -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/common_scripts.min.js"></script>
-	<script src="js/velocity.min.js"></script>
-	<script src="js/common_functions.js"></script>
-	<script src="js/file-validator.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/common_functions.js"></script>
+    <script src="js/file-validator.js"></script>
 
-	<!-- Wizard script-->
-	<script src="js/func_1.js"></script>
+    <!-- Wizard script-->
+    <script src="js/func_1.js"></script>
 
-	<script>
-		var dateNum = 0;
-		$("#dateAdd").click(() => {
-			if (!$("#day").val()) {
-				alert('Input your worked day!');
-				return;
-			}
-			if (!$("#startDate").val()) {
-				alert('Input your started time!');
-				return;
-			}
-			if (!$("#endDate").val()) {
-				alert('Input your ended time!');
-				return;
-			}
-			$(".selectDates").append(`
-				<p datenum=`+dateNum+` class="selectDateCard">`+$("#day").val()+' '+$("#startDate").val()+' ~ '+$("#endDate").val()+` 
-					<span class="material-symbols-outlined hoverDelete">
-						delete
-					</span>
-				</p>
-			`)
+    <script>
+      var dateNum = 0;
 
-			$(".selectDatesResult").append(`
-				<p datenum=`+dateNum+` class="selectDateCard">`+$("#day").val()+' '+$("#startDate").val()+' ~ '+$("#endDate").val()+` 
-				</p>
-			`)
-			
-			$(".hoverDelete").each(function(index){
-				$(this).on('click', function(){
-					var num = parseInt($(this).parent().attr('datenum'));
-					var selectDates = $(".selectDateCard");
-					for (var i = 0; i < selectDates.length; i++) {
-						if ($(selectDates[i]).attr('datenum') == num) {
-							$(selectDates[i]).remove();
-						}
-					}
-				});
-			})
-			
-			dateNum++;
-		});
-	</script>
+      $("#submit").click((ev) => {
+        ev.preventDefault();
+        var fullname = $(".name_field").text();
+        var email = $(".email_field").text();
+        var contact = $(".contact_field").text();
+        var school = $(".school_field").text();
 
-</body>
+        var postData = [];
+        var workedDay = $(".selectDatesResult .selectDateCardPanel");
+        var temp = [
+          fullname,
+          email,
+          contact,
+          school,
+          $(workedDay[0]).find(".date").html(),
+          $(workedDay[0]).find(".dollar").html(),
+          $(workedDay[0]).find(".description").html(),
+        ];
+        postData.push(temp);
+        for (i = 1; i < workedDay.length; i++) {
+          temp = [
+            "",
+            "",
+            "",
+            "",
+            $(workedDay[i]).find(".date").html(),
+            $(workedDay[i]).find(".dollar").html(),
+            $(workedDay[i]).find(".description").html(),
+          ];
+          postData.push(temp);
+        }
+        console.log(postData);
+        $.post("save.php", { data: postData }, function (result) {
+          alert(result);
+        });
+      });
+      $("#dateAdd").click(() => {
+        if (!$("#day").val()) {
+          alert("Input your worked day!");
+          return;
+        }
+        if (!$("#startDate").val()) {
+          alert("Input your started time!");
+          return;
+        }
+        if (!$("#endDate").val()) {
+          alert("Input your ended time!");
+          return;
+        }
+        if (!$("#description").val()) {
+          alert("Input description field!");
+          return;
+        }
+        if (!$("#rate").val()) {
+          alert("Input rate field!");
+          return;
+        }
+        $(".selectDates").append(
+          `
+                      		<div datenum=` +
+            dateNum +
+            ` class="selectDateCardPanel">
+                      			<span class="selectDateCard">` +
+            $("#day").val() +
+            " " +
+            $("#startDate").val() +
+            " ~ " +
+            $("#endDate").val() +
+            `
+                      				<span style="padding-left: 20px">$` +
+            $("#rate").val() +
+            `</span>
+                      				<span class="material-symbols-outlined hoverDelete">
+                      					delete
+                      				</span>
+                      			</span>
+                      			<center><span>` +
+            $("#description").val() +
+            `</span></center>
+                      		</div>
+                      	`
+        );
+
+        $(".selectDatesResult").append(
+          `
+                      		<div datenum=` +
+            dateNum +
+            ` class="selectDateCardPanel">
+                      			<span class="selectDateCard"><span class='date'>` +
+            $("#day").val() +
+            " " +
+            $("#startDate").val() +
+            " ~ " +
+            $("#endDate").val() +
+            `</span><span class='dollar' style="padding-left: 20px">$` +
+            $("#rate").val() +
+            `</span>
+                      			</span>
+                      			<center><span class='description' >` +
+            $("#description").val() +
+            `</span></center>
+                      		</div>
+                      	`
+        );
+
+        $(".hoverDelete").each(function (index) {
+          $(this).on("click", function () {
+            var num = parseInt($(this).parent().parent().attr("datenum"));
+            var selectDates = $(".selectDateCardPanel");
+            for (var i = 0; i < selectDates.length; i++) {
+              if ($(selectDates[i]).attr("datenum") == num) {
+                $(selectDates[i]).remove();
+              }
+            }
+          });
+        });
+
+        dateNum++;
+      });
+    </script>
+  </body>
 </html>
